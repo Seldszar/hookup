@@ -1,0 +1,11 @@
+{
+  "command": "echo {body.name}!",
+  "rules": {
+    "method": "POST",
+    "body": {
+      "name": {
+        "$exists": true
+      }
+    }
+  }
+}
